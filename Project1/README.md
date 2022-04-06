@@ -2,7 +2,7 @@
 ![alt text](project1.png)
 
 ## Directory Structure
-
+```
 Project1
 |-- CMakeLists.txt
 |-- model
@@ -17,3 +17,4 @@ Project1
 |   `-- hello.cpp
 `-- world
     `-- myoffice.world
+```

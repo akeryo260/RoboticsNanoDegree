@@ -1,4 +1,4 @@
-# Project 1: Build My World
+# Project 2: Go Chase It!
 ![alt text](project2.png)
 
 ## Directory Structure

@@ -38,7 +38,6 @@ Project4
 │   └── worlds
 │       └── myoffice.world
 ├── README.md
-├── rtabmap.zip
 └── teleop_twist_keyboard
     ├── CHANGELOG.rst
     ├── CMakeLists.txt

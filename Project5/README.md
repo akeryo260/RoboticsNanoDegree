@@ -24,30 +24,58 @@ rosdep -i install turtlebot_gazebo
 ## Run
 ### SLAM Testing
 map the environment designed with the Building Editor in Gazebo
+```
 cd /home/workspace/catkin_ws
 ./src/scripts/test_slam.sh
+```
+#### Packages on SLAM Testing
+* turtlebot_gazebo: deploy turtlebot in my environment, and perform SLAM
+* turtlebot_rviz_launchers: observe map in rviz
+* turtlebot_teleop: control robot with keyboard
 
 ### Localization and Navigation Testing
 test robot's ability to reach goals using the ROS Navigation stack
+```
 cd /home/workspace/catkin_ws
 ./src/scripts/test_navigation.sh
+```
+#### Packages on Localization and Navigation Testing
+* turtlebot_gazebo: deploy turtlebot in my environment, localize robot
+* turtlebot_rviz_launchers: observe map in rviz
 
 ### Reaching Multiple Goals
 send successive goals for my robot by a node 
 that will communicate with the ROS navigation stack
+```
 cd /home/workspace/catkin_ws
 ./src/scripts/pick_objects.sh
+```
+#### Packages on Reaching Multiple Goals
+* turtlebot_gazebo: deploy turtlebot in my environment, localize robot
+* turtlebot_rviz_launchers: observe map in rviz
+* pick_objects: send pickup and drop off zones to navigation stack
 
 ### Modeling Virtual Objects
 model a virtual object with markers in rviz
+```
 cd /home/workspace/catkin_ws
 ./src/scripts/add_markers.sh
+```
+#### Packages on Modeling Virtual Objects
+* turtlebot_gazebo: deploy turtlebot in my environment, localize robot
+* add_markers: draw pickup and drop off zones in rviz
 
 ### Your Home Service Robot
 simulate a full home service robot navigating to pick up 
 and delivering virtual objects
+```
 cd /home/workspace/catkin_ws
 ./src/scripts/home_service.sh
+```
+#### Packages on Your Home Service Robot
+* turtlebot_gazebo: deploy turtlebot in my environment, localize robot
+* pick_objects: send pickup and drop off zones to navigation stack
+* add_markers: draw pickup and drop off zones in rviz
 
 travel to pickup zone
 ![alt text](travel_to_pickup_zone.png)

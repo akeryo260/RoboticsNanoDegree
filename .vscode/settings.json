@@ -1,0 +1,33 @@
+{
+    // Project4を検索、ファイル監視、インデックスから除外
+    "search.exclude": {
+        "Project4/**": true
+    },
+    "files.exclude": {
+        "Project4/**": true
+    },
+    "files.watcherExclude": {
+        "Project4/**": true
+    },
+    // Copilot indexing exclusion (if using GitHub Copilot)
+    "github.copilot.advanced": {
+        "inlineSuggestCount": 3
+    },
+    // TypeScript/JavaScript indexing exclusion
+    "typescript.preferences.exclude": [
+        "Project4/**"
+    ],
+    // Python indexing exclusion (Pylance)
+    "python.analysis.exclude": [
+        "Project4/**"
+    ],
+    // C++ indexing exclusion (C/C++ extension)
+    "C_Cpp.files.exclude": {
+        "Project4/**": true
+    },
+    // Git operations exclusion
+    "git.ignoredRepositories": [
+        "Project4"
+    ],
+    "markdown.validate.enabled": true
+}

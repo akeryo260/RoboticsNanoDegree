@@ -65,7 +65,7 @@ RTAB-Mapを使用した3D SLAM（Simultaneous Localization and Mapping）の実�
 - [ ] トラブルシューティングセクションの追加
 - [ ] デモ動画とGIFの作成
 - [ ] アーキテクチャ図とROSノードグラフの追加
-- [ ] 英語版READMEの作成
+- [x] 英語版READMEの作成
 
 ### インフラストラクチャ
 - [ ] **継続的インテグレーション**: 自動ビルドとテスト

@@ -2,6 +2,8 @@
 
 Udacity Robotics Software Engineer Nanodegreeのプロジェクト集
 
+![Image](https://github.com/user-attachments/assets/5e8ad38b-101c-44b3-8b36-821fedafd2b7)
+
 ## プロジェクト一覧
 
 ### Project 1: Build My World

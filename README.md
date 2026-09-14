@@ -1,106 +1,106 @@
 # RoboticsNanoDegree
 
-Udacity Robotics Software Engineer Nanodegreeのプロジェクト集
+A collection of projects from the Udacity Robotics Software Engineer Nanodegree
 
-本リポジトリは、Udacityのロボティクスソフトウェアエンジニアナノディグリーで取り組んだ5つのプロジェクトをまとめたものです。Gazeboを用いたシミュレーション環境の構築から、ROSベースの画像処理・追跡、AMCLによる自己位置推定、RTAB-Mapを用いた3D SLAM、そして複数のROS技術を統合したホームサービスロボットの実装まで、モバイルロボティクスにおける代表的な技術要素を一通り体験できる構成になっています。各プロジェクトは独立したディレクトリで管理されており、それぞれに詳細なセットアップ手順とソースコードが含まれています。
+This repository brings together the five projects completed in Udacity's Robotics Software Engineer Nanodegree. It covers a representative set of core mobile robotics techniques, from building simulation environments in Gazebo, to ROS-based image processing and tracking, self-localization with AMCL, 3D SLAM with RTAB-Map, and a home service robot that integrates multiple ROS technologies. Each project is managed in its own directory, complete with detailed setup instructions and source code.
 
-## プロジェクト一覧
-
-### Project 1: Build My World
-Gazeboを使用した初めての世界構築プロジェクト。カスタムモデルとワールドファイルの作成を学習。
-
-### Project 2: Go Chase It!
-ROSノードとサービスを使用して、白いボールを検出して追跡するロボットの実装。
-
-### Project 3: Where Am I?
-AMCLパッケージを使用したロボットのローカライゼーション。既知のマップ上でロボットの位置を推定。
-
-### Project 4: Map My World
-RTAB-Mapを使用した3D SLAM（Simultaneous Localization and Mapping）の実装。
-
-### Project 5: Home Service Robot
-複数のゴール地点へのナビゲーション、オブジェクトのピックアップとドロップオフを行うホームサービスロボット。
-
-## 改善点
-
-### 全プロジェクト共通
-- [ ] **CI/CDパイプラインの導入**: GitHub Actionsを使用した自動ビルドとテストの設定
-- [ ] **Dockerコンテナ化**: 環境依存性を解決し、再現性を向上させるためのDockerfile作成
-- [ ] **依存関係の文書化**: 各プロジェクトで必要なROSパッケージとバージョンの明確化
-- [ ] **コードスタイルの統一**: C++コードのフォーマット統一（clang-formatの使用）
-- [ ] **ユニットテストの追加**: Google Testを使用したテストカバレッジの向上
+## Project List
 
 ### Project 1: Build My World
-- [ ] より複雑な環境の追加（階段、傾斜路など）
-- [ ] モデルの物理特性の最適化（摩擦、慣性の調整）
-- [ ] プラグインを使用した動的オブジェクトの追加
+A first world-building project using Gazebo. Learn to create custom models and world files.
 
 ### Project 2: Go Chase It!
-- [ ] **画像処理の最適化**: HSVカラースペースを使用したより堅牢なボール検出
-- [ ] **PID制御の実装**: より滑らかなロボットの動きを実現
-- [ ] **複数色のボール対応**: コマンドラインパラメータでの色選択機能
-- [ ] **安全機能の追加**: 障害物検出と衝突回避
-- [ ] **デバッグ用可視化**: 検出結果を示すマーカーのRviz表示
+A robot implementation that detects and tracks a white ball using ROS nodes and services.
 
 ### Project 3: Where Am I?
-- [ ] **AMCLパラメータの最適化**: より高速で正確なローカライゼーション
-- [ ] **動的リコンフィギュレーション**: 実行時のパラメータ調整機能
-- [ ] **複数のセンサー融合**: IMUデータの統合による精度向上
-- [ ] **パフォーマンス指標の追加**: ローカライゼーション精度の定量的評価
+Robot localization using the AMCL package. Estimate the robot's position on a known map.
 
 ### Project 4: Map My World
-- [ ] **ループクロージャの最適化**: メモリ使用量と処理速度の改善
-- [ ] **マップ保存/読み込み機能**: データベースの効率的な管理
-- [ ] **3Dポイントクラウドの密度向上**: センサー設定の最適化
-- [ ] **複数フロアのマッピング対応**: 高さ情報の適切な処理
+An implementation of 3D SLAM (Simultaneous Localization and Mapping) using RTAB-Map.
 
 ### Project 5: Home Service Robot
-- [ ] **動的経路計画**: 環境変化に対応した再計画機能
-- [ ] **タスクスケジューリング**: 優先度付きの複数タスク管理
-- [ ] **バッテリー管理**: 充電ステーションへの自動帰還機能
-- [ ] **音声フィードバック**: タスク完了の音声通知
-- [ ] **Webインターフェース**: ブラウザからのロボット制御とモニタリング
-- [ ] **機械学習の統合**: オブジェクト認識による高度なピックアップ機能
+A home service robot that navigates to multiple goal locations and performs object pickup and drop-off.
 
-### ドキュメンテーション
-- [ ] 各プロジェクトの詳細なセットアップガイド
-- [ ] トラブルシューティングセクションの追加
-- [ ] デモ動画とGIFの作成
-- [ ] アーキテクチャ図とROSノードグラフの追加
-- [ ] 英語版READMEの作成
+## Areas for Improvement
 
-### インフラストラクチャ
-- [ ] **継続的インテグレーション**: 自動ビルドとテスト
-- [ ] **コードカバレッジレポート**: テストの網羅性の可視化
-- [ ] **静的解析**: cppcheckやclang-tidyの導入
-- [ ] **パフォーマンスプロファイリング**: ボトルネックの特定と最適化
+### Common to all projects
+- [ ] **Introduce a CI/CD pipeline**: Set up automated builds and tests using GitHub Actions
+- [ ] **Dockerize**: Create Dockerfiles to resolve environment dependencies and improve reproducibility
+- [ ] **Document dependencies**: Clarify the required ROS packages and versions for each project
+- [ ] **Unify code style**: Standardize C++ code formatting (using clang-format)
+- [ ] **Add unit tests**: Improve test coverage using Google Test
 
-## セットアップ
+### Project 1: Build My World
+- [ ] Add more complex environments (stairs, ramps, etc.)
+- [ ] Optimize model physical properties (friction, inertia adjustments)
+- [ ] Add dynamic objects using plugins
 
-### 必要な環境
+### Project 2: Go Chase It!
+- [ ] **Optimize image processing**: More robust ball detection using the HSV color space
+- [ ] **Implement PID control**: Achieve smoother robot motion
+- [ ] **Support multiple ball colors**: Color selection via command-line parameters
+- [ ] **Add safety features**: Obstacle detection and collision avoidance
+- [ ] **Debug visualization**: Display detection markers in Rviz
+
+### Project 3: Where Am I?
+- [ ] **Optimize AMCL parameters**: Faster and more accurate localization
+- [ ] **Dynamic reconfiguration**: Runtime parameter tuning
+- [ ] **Multi-sensor fusion**: Improve accuracy by integrating IMU data
+- [ ] **Add performance metrics**: Quantitative evaluation of localization accuracy
+
+### Project 4: Map My World
+- [ ] **Optimize loop closure**: Improve memory usage and processing speed
+- [ ] **Map save/load feature**: Efficient database management
+- [ ] **Increase 3D point cloud density**: Optimize sensor settings
+- [ ] **Support multi-floor mapping**: Proper handling of height information
+
+### Project 5: Home Service Robot
+- [ ] **Dynamic path planning**: Replanning in response to environment changes
+- [ ] **Task scheduling**: Priority-based multi-task management
+- [ ] **Battery management**: Automatic return to charging station
+- [ ] **Voice feedback**: Audio notification on task completion
+- [ ] **Web interface**: Robot control and monitoring from a browser
+- [ ] **Machine learning integration**: Advanced pickup via object recognition
+
+### Documentation
+- [ ] Detailed setup guide for each project
+- [ ] Add a troubleshooting section
+- [ ] Create demo videos and GIFs
+- [ ] Add architecture diagrams and ROS node graphs
+- [ ] Create an English version of the README
+
+### Infrastructure
+- [ ] **Continuous integration**: Automated builds and tests
+- [ ] **Code coverage reports**: Visualize test coverage
+- [ ] **Static analysis**: Introduce cppcheck and clang-tidy
+- [ ] **Performance profiling**: Identify and optimize bottlenecks
+
+## Setup
+
+### Requirements
 - Ubuntu 16.04 / 18.04 / 20.04
 - ROS Kinetic / Melodic / Noetic
 - Gazebo 7.0+
 - CMake 3.0+
 
-### ビルド手順
+### Build steps
 ```bash
-# ワークスペースのセットアップ
+# Set up the workspace
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
 git clone https://github.com/akeryo260/RoboticsNanoDegree.git
 
-# 依存関係のインストール
+# Install dependencies
 cd ~/catkin_ws
 rosdep install --from-paths src --ignore-src -r -y
 
-# ビルド
+# Build
 catkin_make
 source devel/setup.bash
 ```
 
-## 貢献
-プルリクエストを歓迎します。大きな変更の場合は、まずissueを開いて変更内容を議論してください。
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## ライセンス
-各プロジェクトのライセンスについては、個別のプロジェクトディレクトリを参照してください。
+## License
+See each project's individual directory for its license information.

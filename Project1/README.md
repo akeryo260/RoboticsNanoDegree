@@ -1,10 +1,10 @@
-# Project 1: Build My World
-![alt text](project1.png)
+# Project 1: 自分の世界を作ろう
+![画像](project1.png)
 
-## Overview
-The first project of Udacity's Robotics Software Engineer Nanodegree. It focuses on building a custom simulation environment in Gazebo: an office-like world populated with objects from the Gazebo model database, two custom robot models, and a world plugin that runs when the world is loaded.
+## 概要
+UdacityのRobotics Software Engineer Nanodegreeの最初のプロジェクトです。Gazeboでカスタムシミュレーション環境を構築します。Gazeboのモデルデータベースにあるオブジェクトを配置したオフィス風のワールド、2つのカスタムロボットモデル、ワールドの読み込み時に実行されるワールドプラグインを作成します。
 
-## Directory Structure
+## ディレクトリ構成
 ```
 ├── Project1
 │   ├── CMakeLists.txt
@@ -27,34 +27,34 @@ The first project of Udacity's Robotics Software Engineer Nanodegree. It focuses
 └── README.md
 ```
 
-## Contents
+## 内容
 
-### World: `world/myoffice.world`
-An office environment built on the ground plane, populated with bookshelves, cafe tables, and a car model. It loads the `hello` world plugin at startup.
+### ワールド: `world/myoffice.world`
+地面の上に構築したオフィス環境です。本棚、カフェテーブル、車のモデルが配置されています。起動時に`hello`ワールドプラグインを読み込みます。
 
-### Models: `model/`
-- **mybuilding** — A custom building model used as the office structure.
-- **simplerobot** / **simplerobot2** — Simple box-shaped robot models used to place robots in the world.
+### モデル: `model/`
+- **mybuilding** — オフィスの建物として使用するカスタムモデルです。
+- **simplerobot** / **simplerobot2** — ワールドに配置する、シンプルな箱型ロボットのモデルです。
 
-### Plugin: `script/hello.cpp`
-A minimal Gazebo `WorldPlugin` that prints a greeting message to the console when the world is loaded, built as a shared library named `libhello.so`.
+### プラグイン: `script/hello.cpp`
+ワールドの読み込み時にコンソールへ挨拶メッセージを表示する、シンプルなGazeboの`WorldPlugin`です。`libhello.so`という名前の共有ライブラリとしてビルドされます。
 
-## Requirements
+## 必要な環境
 - Gazebo 7.0+
 - CMake 2.8+
 
-## Build & Run
+## ビルドと実行
 ```bash
-# Build the world plugin
+# ワールドプラグインをビルド
 cd Project1
 mkdir -p build && cd build
 cmake ..
 make
 
-# Make the plugin discoverable by Gazebo
+# Gazeboからプラグインを読み込めるようにする
 export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:$(pwd)
 
-# Launch the world
+# ワールドを起動
 cd ..
 gazebo world/myoffice.world
 ```

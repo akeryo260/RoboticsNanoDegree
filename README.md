@@ -88,6 +88,9 @@ A home service robot that navigates to multiple goal locations and performs obje
 - CMake 3.0+
 
 ### Build steps
+
+![Build workflow: create workspace, clone, install dependencies, build, source](docs/images/build-workflow.png)
+
 ```bash
 # Set up the workspace
 mkdir -p ~/catkin_ws/src

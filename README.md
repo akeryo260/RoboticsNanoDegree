@@ -4,6 +4,10 @@ A collection of projects from the Udacity Robotics Software Engineer Nanodegree
 
 This repository brings together the five projects completed in Udacity's Robotics Software Engineer Nanodegree. It covers a representative set of core mobile robotics techniques, from building simulation environments in Gazebo, to ROS-based image processing and tracking, self-localization with AMCL, 3D SLAM with RTAB-Map, and a home service robot that integrates multiple ROS technologies. Each project is managed in its own directory, complete with detailed setup instructions and source code.
 
+## Overview
+
+![Project overview: the five projects of the Robotics Software Engineer Nanodegree](docs/images/project-overview.png)
+
 ## Project List
 
 ### Project 1: Build My World
